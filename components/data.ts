@@ -21,6 +21,11 @@ export const galleryData: GalleryCardProps[] = [
         isHomePage: true,
     },
     {
+        title: "Neo Brutalist Button",
+        videoSrc: "https://assets.amarn.me/neo-brutalist-button.mp4",
+        liveUrl: "https://www.chamaac.com/components/brutalist-button",
+    },
+    {
         title: "Slide Up Button",
         videoSrc: "https://assets.amarn.me/slide-up-button.mp4",
         liveUrl: "https://www.chamaac.com/components/slideup-button",
