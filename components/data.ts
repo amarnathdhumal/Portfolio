@@ -22,8 +22,9 @@ export const galleryData: GalleryCardProps[] = [
     },
     {
         title: "Neo Brutalist Button",
-        videoSrc: "https://assets.amarn.me/neo-brutalist-button.mp4",
+        videoSrc: "https://assets.amarn.me/neo-brutalist-buttonv2.mp4",
         liveUrl: "https://www.chamaac.com/components/brutalist-button",
+        isHomePage: true,
     },
     {
         title: "Slide Up Button",
@@ -42,7 +43,6 @@ export const galleryData: GalleryCardProps[] = [
         title: "Dancing Letters",
         videoSrc: "https://assets.amarn.me/dancing-lettersv3.mp4",
         liveUrl: "https://www.chamaac.com/components/dancing-letters",
-        isHomePage: true,
     },
 
     // Sections
