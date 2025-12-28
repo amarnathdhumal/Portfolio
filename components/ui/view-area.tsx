@@ -26,7 +26,7 @@ const ViewArea = ({
     const outerBorderClasses = cn(
         showBorderTop && "border-t-1",
         showBorderBottom && "border-b-1",
-        (showBorderTop || showBorderBottom) && "border-neutral-200 dark:border-neutral-800/60",
+        (showBorderTop || showBorderBottom) && "border-neutral-200 dark:border-neutral-800/90",
         "px-4 sm:px-0",
         outerClassName
     )
@@ -34,7 +34,7 @@ const ViewArea = ({
     const innerBorderClasses = cn(
         showBorderLeft && "border-l-1",
         showBorderRight && "border-r-1",
-        (showBorderLeft || showBorderRight) && "border-neutral-200 dark:border-neutral-800/60"
+        (showBorderLeft || showBorderRight) && "border-neutral-200 dark:border-neutral-800/90"
     )
 
     return (
