@@ -11,31 +11,31 @@ export const galleryData: GalleryCardProps[] = [
     {
         title: "Premium Button",
         videoSrc: "https://assets.amarn.me/premium_button.mp4",
-        liveUrl: "https://www.chamaac.com/components/premium-button",
+        liveUrl: "https://www.chamaac.com/components/buttons/premium-button",
         isHomePage: true,
     },
     {
         title: "Shimmer Button",
         videoSrc: "https://assets.amarn.me/shimmer-button.mp4",
-        liveUrl: "https://www.chamaac.com/components/shimmer-button",
+        liveUrl: "https://www.chamaac.com/components/buttons/shimmer-button",
         isHomePage: true,
     },
     {
         title: "Neo Brutalist Button",
         videoSrc: "https://assets.amarn.me/neo-brutalist-buttonv2.mp4",
-        liveUrl: "https://www.chamaac.com/components/brutalist-button",
+        liveUrl: "https://www.chamaac.com/components/buttons/neo-brutalist-button",
         isHomePage: true,
     },
     {
         title: "Slide Up Button",
         videoSrc: "https://assets.amarn.me/slide-up-button.mp4",
-        liveUrl: "https://www.chamaac.com/components/slideup-button",
+        liveUrl: "https://www.chamaac.com/components/buttons/slideup-button",
 
     },
     {
         title: "Focus Button",
         videoSrc: "https://assets.amarn.me/focus-button.mp4",
-        liveUrl: "https://www.chamaac.com/components/focus-button",
+        liveUrl: "https://www.chamaac.com/components/buttons/focus-button",
     },
 
     // Text animaitons
