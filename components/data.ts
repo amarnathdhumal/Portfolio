@@ -15,6 +15,11 @@ export const galleryData: GalleryCardProps[] = [
         isHomePage: true,
     },
     {
+        title: "Glowing Border Button",
+        videoSrc: "https://assets.amarn.me/glowing-border-button.mp4",
+        liveUrl: "https://www.chamaac.com/components/buttons/glowing-border-button",
+    },
+    {
         title: "Shimmer Button",
         videoSrc: "https://assets.amarn.me/shimmer-button.mp4",
         liveUrl: "https://www.chamaac.com/components/buttons/shimmer-button",
