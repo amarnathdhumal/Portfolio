@@ -3,6 +3,12 @@ import { GalleryCardProps } from "@/app/lib/types";
 export const galleryData: GalleryCardProps[] = [
     // Buttons
     {
+        title: "Text Loop",
+        videoSrc: "https://assets.amarn.me/text-loop.mp4",
+        liveUrl: "https://www.chamaac.com/components/text-loop",
+        isHomePage: true,
+    },
+    {
         title: "Gif Text",
         videoSrc: "https://assets.amarn.me/gif-text.mp4",
         liveUrl: "https://www.chamaac.com/components/gif-text",
@@ -88,6 +94,5 @@ export const galleryData: GalleryCardProps[] = [
         title: "Dock",
         videoSrc: "https://assets.amarn.me/dock.mp4",
         liveUrl: "https://www.chamaac.com/components/dock",
-        isHomePage: true,
     },
 ];
