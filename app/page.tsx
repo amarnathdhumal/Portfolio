@@ -4,7 +4,6 @@ import Work from "@/components/Work";
 import Divider from "@/components/ui/divider";
 import GalleryComponent from "@/components/gallery-component";
 import ContactSection from "@/components/contact-section";
-import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -26,8 +25,6 @@ export default function Home() {
         <div id="contact">
           <ContactSection />
         </div>
-        <Divider />
-        <Footer />
       </div>
     </div>
   );
