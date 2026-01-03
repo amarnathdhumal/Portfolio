@@ -1,6 +1,7 @@
 import { GalleryCardProps } from "@/app/lib/types";
 
 export const galleryData: GalleryCardProps[] = [
+
     // Buttons
     {
         title: "Text Loop",
@@ -47,6 +48,11 @@ export const galleryData: GalleryCardProps[] = [
         title: "Focus Button",
         videoSrc: "https://assets.amarn.me/focus-button.mp4",
         liveUrl: "https://www.chamaac.com/components/buttons/focus-button",
+    },
+    {
+        title: "AI Input",
+        videoSrc: "https://assets.amarn.me/ai-input.mp4",
+        liveUrl: "https://www.chamaac.com/components/ai-input",
     },
 
     // Text animaitons
