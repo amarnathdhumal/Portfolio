@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/lib/theme-provider";
 import Header from "@/components/ui/header";
 import { CSPostHogProvider } from "./providers/posthog-provider";
 import PostHogPageView from "./providers/posthog-pageview";
+import Footer from "@/components/footer";
+
 const outfit = Outfit({
   variable: "--font-outfit",
   subsets: ["latin"],
@@ -68,8 +70,11 @@ export default function RootLayout({
         >
           <CSPostHogProvider>
             <PostHogPageView />
-            <Header />
-            {children}
+            <div className="pb-[10px]">
+              <Header />
+              {children}
+              <Footer />
+            </div>
             <Analytics />
           </CSPostHogProvider>
         </ThemeProvider>

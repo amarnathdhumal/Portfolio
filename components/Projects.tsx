@@ -59,7 +59,6 @@ const projectData: Project[] = [
 
 const Projects = () => {
 
-
   return (
     <ViewArea showBorderTop={false}>
       <div >

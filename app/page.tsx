@@ -8,7 +8,7 @@ import ContactSection from "@/components/contact-section";
 export default function Home() {
   return (
     <div className="bg-white dark:bg-black overflow-x-hidden">
-      <div className="w-full pt-[66px] pb-[10px]">
+      <div className="w-full pt-[66px]">
         <Hero />
         <Divider />
         <div id="projects">
@@ -25,6 +25,7 @@ export default function Home() {
         <div id="contact">
           <ContactSection />
         </div>
+        <Divider />
       </div>
     </div>
   );
