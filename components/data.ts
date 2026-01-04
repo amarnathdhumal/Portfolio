@@ -6,13 +6,13 @@ export const galleryData: GalleryCardProps[] = [
     {
         title: "Text Loop",
         videoSrc: "https://assets.amarn.me/text-loop.mp4",
-        liveUrl: "https://www.chamaac.com/components/text-loop",
+        liveUrl: "https://www.chamaac.com/components/text-animations/text-loop",
         isHomePage: true,
     },
     {
         title: "Gif Text",
         videoSrc: "https://assets.amarn.me/gif-text.mp4",
-        liveUrl: "https://www.chamaac.com/components/gif-text",
+        liveUrl: "https://www.chamaac.com/components/text-animations/gif-text",
         isHomePage: true,
     },
     {
@@ -52,34 +52,34 @@ export const galleryData: GalleryCardProps[] = [
     {
         title: "AI Input",
         videoSrc: "https://assets.amarn.me/ai-input.mp4",
-        liveUrl: "https://www.chamaac.com/components/ai-input",
+        liveUrl: "https://www.chamaac.com/components/inputs/ai-input",
     },
 
-    // Text animaitons
+    // Text animations
     {
         title: "Dancing Letters",
         videoSrc: "https://assets.amarn.me/dancing-lettersv3.mp4",
-        liveUrl: "https://www.chamaac.com/components/dancing-letters",
+        liveUrl: "https://www.chamaac.com/components/text-animations/dancing-letters",
     },
 
     // Sections
     {
         title: "Feature Steps",
         videoSrc: "https://assets.amarn.me/features-section.mp4",
-        liveUrl: "https://www.chamaac.com/components/feature-steps",
+        liveUrl: "https://www.chamaac.com/components/sections/feature-steps",
     },
     {
         title: "Gauge",
         videoSrc: "https://assets.amarn.me/gauge.mp4",
-        liveUrl: "https://www.chamaac.com/components/gauge",
+        liveUrl: "https://www.chamaac.com/components/sections/gauge",
         isHomePage: true,
     },
 
-    // Gallery
+    // Carousels
     {
         title: "Carousel",
         videoSrc: "https://assets.amarn.me/carousel.mp4",
-        liveUrl: "https://www.chamaac.com/components/carousel",
+        liveUrl: "https://www.chamaac.com/components/carousels/carousel",
     },
 
     // // Cards
@@ -99,6 +99,6 @@ export const galleryData: GalleryCardProps[] = [
     {
         title: "Dock",
         videoSrc: "https://assets.amarn.me/dock.mp4",
-        liveUrl: "https://www.chamaac.com/components/dock",
+        liveUrl: "https://www.chamaac.com/components/navigation/dock",
     },
 ];
