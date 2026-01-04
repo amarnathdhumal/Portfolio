@@ -56,7 +56,7 @@ const Hero = () => {
         <BlurFade delay={0.3} inView>
           <div className="flex flex-row gap-2 pt-6">
             <SocialLink
-              href="https://x.com/AmarnathDhumal"
+              href="https://x.com/amarnathdhumal"
               icon={<IconBrandX size={28} />}
               label="View Twitter"
               newTab
@@ -78,7 +78,7 @@ const Hero = () => {
               newTab
             />
             <SocialLink
-              href="https://linkedin.com/in/amarnath-dhumal"
+              href="https://linkedin.com/in/amarnathdhumal"
               icon={<IconBrandLinkedin size={28} />}
               label="View LinkedIn"
               newTab
