@@ -7,7 +7,7 @@ A modern portfolio built with Next.js.
 Clone the repository:
 
 ```bash
-git clone https://github.com/amarnath666/Portfolio
+git clone https://github.com/amarnathdhumal/Portfolio
 cd Portfolio
 ```
 

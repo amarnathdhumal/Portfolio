@@ -70,7 +70,7 @@ const Header = () => {
                         ))}
 
                         {/* <SocialLink
-                            href="https://github.com/amarnath666/Portfolio"
+                            href="https://github.com/amarnathdhumal/Portfolio"
                             icon={<IconMoon size={28} className="text-black dark:text-white" />}
                             label="Star on GitHub"
                             newTab

@@ -33,7 +33,7 @@ const projectData: Project[] = [
     videoSrc: "/videos/SideKick.mp4",
     imageSrc: "/images/side.png",
     liveUrl: "https://sidekick.amarn.me",
-    githubUrl: "https://github.com/amarnath666/Side-Project-Template",
+    githubUrl: "https://github.com/amarnathdhumal/Side-Project-Template",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
@@ -42,7 +42,7 @@ const projectData: Project[] = [
     videoSrc: "/videos/YTNotes.mp4",
     imageSrc: "/images/yt.png",
     liveUrl: "https://www.ytnotes.online",
-    githubUrl: "https://github.com/amarnath666/YTNotes",
+    githubUrl: "https://github.com/amarnathdhumal/YTNotes",
     technologies: ["Next.js", "TypeScript", "MongoDB", "Razorpay", "Tailwind CSS"],
   },
   {
@@ -51,7 +51,7 @@ const projectData: Project[] = [
     videoSrc: "/videos/SketchSync.mp4",
     imageSrc: "/images/sketch.png",
     liveUrl: "https://sketchsync-canvas.vercel.app",
-    githubUrl: "https://github.com/amarnath666/SketchSync",
+    githubUrl: "https://github.com/amarnathdhumal/SketchSync",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Convex"],
   },
 ];

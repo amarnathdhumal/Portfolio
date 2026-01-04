@@ -35,7 +35,7 @@ const Findme = () => {
           <Button
             icon={<IconBrandGithub size={18} />}
             name="Github"
-            onClick={() => { window.open("https://github.com/amarnath666", "_blank") }}
+            onClick={() => { window.open("https://github.com/amarnathdhumal", "_blank") }}
           />
           <Button
             icon={<Linkedin size={18} />}

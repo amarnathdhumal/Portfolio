@@ -72,7 +72,7 @@ const Hero = () => {
               label="Mail me"
             />
             <SocialLink
-              href="https://github.com/amarnath666"
+              href="https://github.com/amarnathdhumal"
               icon={<IconBrandGithub size={28} />}
               label="View GitHub"
               newTab
