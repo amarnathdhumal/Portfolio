@@ -24,7 +24,7 @@ const projectData: Project[] = [
     imageSrc: "/images/chamaac.png",
     videoSrc: "/videos/ytnotes.mp4",
     liveUrl: "https://www.chamaac.com",
-    githubUrl: "https://github.com/amarnathdhumal/Chamaac",
+    githubUrl: "https://github.com/amarnathdhumal/chamaacui",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
