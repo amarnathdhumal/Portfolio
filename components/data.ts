@@ -1,7 +1,12 @@
 import { GalleryCardProps } from "@/app/lib/types";
 
 export const galleryData: GalleryCardProps[] = [
-
+    {
+        title: "Animated Icons",
+        videoSrc: "https://assets.amarn.me/animated-iconsv2.mp4",
+        liveUrl: "https://www.chamaac.com/components/animated-icons",
+        isHomePage: true,
+    },
     // Buttons
     {
         title: "Text Loop",
@@ -36,7 +41,6 @@ export const galleryData: GalleryCardProps[] = [
         title: "Neo Brutalist Button",
         videoSrc: "https://assets.amarn.me/neo-brutalist-buttonv2.mp4",
         liveUrl: "https://www.chamaac.com/components/buttons/neo-brutalist-button",
-        isHomePage: true,
     },
     {
         title: "Slide Up Button",
@@ -90,12 +94,6 @@ export const galleryData: GalleryCardProps[] = [
     // },
 
     // Animated Icons
-    {
-        title: "Animated Icons",
-        videoSrc: "https://assets.amarn.me/animated-icons.mp4",
-        liveUrl: "https://www.chamaac.com/components/animated-icons",
-
-    },
     {
         title: "Dock",
         videoSrc: "https://assets.amarn.me/dock.mp4",
