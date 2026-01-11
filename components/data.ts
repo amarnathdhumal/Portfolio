@@ -7,6 +7,12 @@ export const galleryData: GalleryCardProps[] = [
         liveUrl: "https://www.chamaac.com/components/animated-icons",
         isHomePage: true,
     },
+    {
+        title: "Interactive Grid",
+        videoSrc: " https://assets.amarn.me/interactive-grid.mp4",
+        liveUrl: "https://www.chamaac.com/components/backgrounds/interactive-grid",
+        isHomePage: true
+    },
     // Buttons
     {
         title: "Text Loop",
@@ -35,7 +41,6 @@ export const galleryData: GalleryCardProps[] = [
         title: "Shimmer Button",
         videoSrc: "https://assets.amarn.me/shimmer-button.mp4",
         liveUrl: "https://www.chamaac.com/components/buttons/shimmer-button",
-        isHomePage: true,
     },
     {
         title: "Neo Brutalist Button",
