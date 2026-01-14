@@ -73,6 +73,11 @@ export const galleryData: GalleryCardProps[] = [
 
     // Sections
     {
+        title: "Stats Cards",
+        videoSrc: "https://assets.amarn.me/stats-card.mp4",
+        liveUrl: "https://www.chamaac.com/components/sections/stats-cards",
+    },
+    {
         title: "Feature Steps",
         videoSrc: "https://assets.amarn.me/features-section.mp4",
         liveUrl: "https://www.chamaac.com/components/sections/feature-steps",
