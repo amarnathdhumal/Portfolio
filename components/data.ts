@@ -3,7 +3,7 @@ import { GalleryCardProps } from "@/app/lib/types";
 export const galleryData: GalleryCardProps[] = [
     {
         title: "Animated Icons",
-        videoSrc: "https://assets.amarn.me/animated-iconsv2.mp4",
+        videoSrc: "https://assets.amarn.me/animated-icons2.mp4",
         liveUrl: "https://www.chamaac.com/components/animated-icons",
         isHomePage: true,
     },
@@ -92,7 +92,7 @@ export const galleryData: GalleryCardProps[] = [
     // Carousels
     {
         title: "Carousel",
-        videoSrc: "https://assets.amarn.me/carousel.mp4",
+        videoSrc: "https://assets.amarn.me/carousel2.mp4",
         liveUrl: "https://www.chamaac.com/components/carousels/carousel",
     },
 
@@ -106,7 +106,7 @@ export const galleryData: GalleryCardProps[] = [
     // Animated Icons
     {
         title: "Dock",
-        videoSrc: "https://assets.amarn.me/dock.mp4",
+        videoSrc: "https://assets.amarn.me/dock2.mp4",
         liveUrl: "https://www.chamaac.com/components/navigation/dock",
     },
 ];
