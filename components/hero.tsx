@@ -67,7 +67,7 @@ const Hero = () => {
               label="Call me"
             />
             <SocialLink
-              href="mailto:amarnathdhumal2001@gmail.com"
+              href="mailto:hello@amarn.me"
               icon={<IconMail size={28} />}
               label="Mail me"
             />
