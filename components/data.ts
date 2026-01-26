@@ -8,6 +8,12 @@ export const galleryData: GalleryCardProps[] = [
         isHomePage: true,
     },
     {
+        title: "How It Works",
+        videoSrc: "https://assets.amarn.me/how-it-works.mp4",
+        liveUrl: "https://www.chamaac.com/components/how-it-works",
+        isHomePage: true,
+    },
+    {
         title: "Interactive Grid",
         videoSrc: " https://assets.amarn.me/interactive-grid.mp4",
         liveUrl: "https://www.chamaac.com/components/backgrounds/interactive-grid",
@@ -24,7 +30,6 @@ export const galleryData: GalleryCardProps[] = [
         title: "Gif Text",
         videoSrc: "https://assets.amarn.me/gif-text.mp4",
         liveUrl: "https://www.chamaac.com/components/text-animations/gif-text",
-        isHomePage: true,
     },
     {
         title: "Premium Button",
