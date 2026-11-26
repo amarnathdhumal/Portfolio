@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/lib/theme-provider";
 import Header from "@/components/ui/header";
 import { CSPostHogProvider } from "./providers/posthog-provider";
-import PostHogPageView from "./providers/posthog-pageview";
 import Footer from "@/components/footer";
 
 const outfit = Outfit({
@@ -90,13 +88,11 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <CSPostHogProvider>
-            <PostHogPageView />
             <div className="pb-[10px]">
               <Header />
               {children}
               <Footer />
             </div>
-            <Analytics />
           </CSPostHogProvider>
         </ThemeProvider>
       </body>

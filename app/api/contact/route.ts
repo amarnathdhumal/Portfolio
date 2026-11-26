@@ -1,52 +1,39 @@
+import type { SendEmail } from '@cloudflare/workers-types';
+import { getCloudflareContext } from '@opennextjs/cloudflare';
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
     try {
         const body = await req.json();
         const { name, phone, email, message } = body;
 
-        if (!name || !phone) {
+        if (typeof name !== 'string' || !name.trim() || typeof phone !== 'string' || !phone.trim()) {
             return NextResponse.json(
                 { error: 'Name and Phone are required' },
                 { status: 400 }
             );
         }
 
-        // Create a transporter
-        const transporter = nodemailer.createTransport({
-            host: process.env.SMTP_HOST,
-            port: Number(process.env.SMTP_PORT) || 587,
-            secure: process.env.SMTP_SECURE === 'true', // true for 465, false for other ports
-            auth: {
-                user: process.env.SMTP_FROM_EMAIL,
-                pass: process.env.SMTP_PASS,
-            },
+        const { CONTACT_EMAIL } = getCloudflareContext().env as { CONTACT_EMAIL: SendEmail };
+        const from = process.env.CONTACT_FORM_FROM_EMAIL;
+        const to = process.env.CONTACT_FORM_DESTINATION_EMAIL;
+        if (!from || !to) {
+            throw new Error('Contact form sender and destination must be configured');
+        }
+
+        await CONTACT_EMAIL.send({
+            from,
+            to,
+            subject: `New Contact Form Submission from ${name.trim().replace(/[\r\n]+/g, ' ')}`,
+            text: [
+                `Name: ${name}`,
+                `Phone: ${phone}`,
+                `Email: ${typeof email === 'string' && email ? email : 'Not provided'}`,
+                '',
+                'Message:',
+                typeof message === 'string' && message ? message : 'No message',
+            ].join('\n'),
         });
-
-        const mailOptions = {
-            from: process.env.SMTP_FROM_EMAIL,
-            to: process.env.CONTACT_FORM_DESTINATION_EMAIL, // Where you want to receive the notifications
-            subject: `New Contact Form Submission from ${name}`,
-            text: `
-        Name: ${name}
-        Phone: ${phone}
-        Email: ${email || 'Not provided'}
-        
-        Message:
-        ${message || 'No message'}
-      `,
-            html: `
-        <h3>New Contact Form Submission</h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Email:</strong> ${email || 'Not provided'}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message ? message.replace(/\n/g, '<br>') : 'No message'}</p>
-      `,
-        };
-
-        await transporter.sendMail(mailOptions);
 
         return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
     } catch (error) {

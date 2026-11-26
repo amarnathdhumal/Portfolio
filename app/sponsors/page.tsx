@@ -6,8 +6,7 @@ import { ActionButton } from "@/components/ui/action-button";
 import Link from "next/link";
 import { getSponsorsWithPlaceholders } from "@/lib/github-sponsors";
 
-// Revalidate every hour
-export const revalidate = 3600;
+export const dynamic = "force-dynamic";
 
 export default async function SponsorsPage() {
     const sponsors = await getSponsorsWithPlaceholders(4);

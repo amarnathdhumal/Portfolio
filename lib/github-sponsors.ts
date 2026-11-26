@@ -1,6 +1,7 @@
-import { Sponsor } from "@/components/SponsorCard";
+import type { Sponsor } from "@/components/SponsorCard";
 
 const GITHUB_GRAPHQL_ENDPOINT = "https://api.github.com/graphql";
+const SPONSORS_CACHE_KEY = "https://www.amarn.me/sponsors";
 
 interface GitHubSponsor {
     sponsorEntity: {
@@ -65,6 +66,14 @@ export async function fetchGitHubSponsors(): Promise<Sponsor[]> {
     `;
 
     try {
+        const cache = typeof caches === "undefined"
+            ? undefined
+            : await caches.open("github-sponsors").catch(() => undefined);
+        const cached = await cache?.match(SPONSORS_CACHE_KEY).catch(() => undefined);
+        if (cached) {
+            return cached.json();
+        }
+
         const response = await fetch(GITHUB_GRAPHQL_ENDPOINT, {
             method: "POST",
             headers: {
@@ -72,7 +81,7 @@ export async function fetchGitHubSponsors(): Promise<Sponsor[]> {
                 Authorization: `Bearer ${token}`,
             },
             body: JSON.stringify({ query }),
-            next: { revalidate: 3600 }, // Revalidate every hour
+            cache: "no-store",
         });
 
         if (!response.ok) {
@@ -96,6 +105,10 @@ export async function fetchGitHubSponsors(): Promise<Sponsor[]> {
                 avatarUrl: node.sponsorEntity.avatarUrl,
                 amount: `$${node.tier.monthlyPriceInDollars} / month`,
             }));
+
+        await cache?.put(SPONSORS_CACHE_KEY, Response.json(sponsors, {
+            headers: { "Cache-Control": "public, max-age=3600" },
+        })).catch(() => undefined);
 
         return sponsors;
     } catch (error) {
