@@ -5,6 +5,11 @@
   "compatibility_date": "2026-11-26",
   "compatibility_flags": ["nodejs_compat"],
   "keep_vars": true,
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "amarn.me", "custom_domain": true },
+    { "pattern": "www.amarn.me", "custom_domain": true }
+  ],
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"

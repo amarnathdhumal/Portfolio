@@ -53,7 +53,7 @@ Set runtime values under **Settings → Variables and Secrets** on the Worker. U
 
 To enable contact emails, onboard your sender domain under **Compute → Email Service → Email Sending**. On Workers Free, verify the destination inbox under **Email Routing → Destination Addresses**. Wrangler configures the `CONTACT_EMAIL` binding, and no SMTP password is required. [Cloudflare Email Service setup](https://developers.cloudflare.com/email-service/get-started/send-emails/)
 
-After testing the `workers.dev` URL, switch `www.amarn.me` by adding it as a custom domain under **Settings → Domains & Routes**. If `www` has a CNAME pointing to Vercel, remove that record during the switch so Cloudflare can create the Worker’s DNS record. [Cloudflare custom domain setup](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/)
+Wrangler connects the Worker to `amarn.me` and `www.amarn.me` at deployment. If `www` has a CNAME pointing to Vercel, remove that record before the cutover so Cloudflare can create the Worker’s DNS record. [Cloudflare custom domain setup](https://developers.cloudflare.com/workers/configuration/routing/custom-domains/)
 
 ---
 
